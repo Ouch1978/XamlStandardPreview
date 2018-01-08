@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XamlStandardPreview.MainPage" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:alias="clr-namespace:Xamarin.Forms.Alias;assembly=Xamarin.Forms.Alias">
+    <ContentPage.Content>
+        <ScrollView>
+            <alias:StackPanel>
+
+                <alias:TextBlock Margin="12,4" Text="Border" />
+                <alias:Border Margin="12,0,12,16" BackgroundColor="Pink" BorderBrush="Red"
+                              CornerRadius="5">
+                    <alias:TextBlock>我在 Border 裡</alias:TextBlock>
+                </alias:Border>
+
+                <alias:TextBlock Margin="12,4" Text="Button" />
+                <alias:Button Margin="12,0,12,16" Text="我是按鈕" />
+
+                <alias:TextBlock Margin="12,4" Text="ComboBox" />
+                <alias:ComboBox Margin="12,0,12,16">
+                    <alias:ComboBox.Items>
+                        <x:String>ComboBox Item1</x:String>
+                        <x:String>ComboBox Item2</x:String>
+                        <x:String>ComboBox Item3</x:String>
+                    </alias:ComboBox.Items>
+                </alias:ComboBox>
+
+                <alias:TextBlock Margin="12,4" Text="ProgressBar" />
+                <alias:ProgressBar Margin="12,0,12,16" Value="20" />
+
+                <alias:TextBlock Margin="12,4" Text="ProgressRing" />
+                <alias:ProgressRing Margin="12,0,12,16" IsRunning="True" Color="Red" />
+
+                <alias:TextBlock Margin="12,4" Text="TextBlock" />
+                <alias:TextBlock Margin="12,0,12,16" FontAttributes="Bold" FontSize="18">
+                    TextBlock
+                </alias:TextBlock>
+
+                <alias:TextBlock Margin="12,4" Text="TextBox" />
+                <alias:TextBox Margin="12,0,12,16">TextBox</alias:TextBox>
+
+                <alias:TextBlock Margin="12,4" Text="ToggleSwitch" />
+                <alias:ToggleSwitch Margin="12,0,12,16" IsOn="True">Test</alias:ToggleSwitch>
+
+                <alias:TextBlock Margin="12,4" Text="UserControl" />
+                <alias:UserControl Margin="12,0,12,16">
+                    <alias:Border BackgroundColor="LightGreen">
+                        <alias:StackPanel>
+                            <alias:TextBlock>Name</alias:TextBlock>
+                            <alias:TextBox>Ouch Liu</alias:TextBox>
+                        </alias:StackPanel>
+                    </alias:Border>
+                </alias:UserControl>
+
+            </alias:StackPanel>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
